@@ -1,7 +1,22 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
+}
+
+.page__container {
+		background-image: url("/images/backgroundflovers.jpg");
+		background-position: left top;
+		background-repeat: no-repeat;
+		background-size: 790px;
+		color: #515076;
+		padding-top: 1px;
 }
 
 .title {
@@ -17,15 +32,21 @@ body {
 .product_list {
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	color: #515076;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 45px;
+	column-gap: 45px;
+	justify-content: center;
+	width: 1110px;
 }
 
 .product_card {
 	background-color: #F7F7FA;
-	width: 290px;
+	width: 340px;
 	padding: 25px;
-	}	
+}	
 
 .product_image {
 	margin-bottom: 30px;
@@ -40,10 +61,10 @@ body {
 	color: #A5A3B9;
 }
 
-.produсt_title {
+.product_title {
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 27;
+	line-height: 27px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
@@ -70,4 +91,6 @@ body {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 24px;
+	display: flex;
+	justify-content: space-between;
 }
